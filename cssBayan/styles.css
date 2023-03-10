@@ -1,0 +1,82 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	background-color: rgb(227, 227, 227);
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.accordion {
+	border: 3px solid #ea5a47;
+	border-radius: 10px;
+	padding: 20px;
+	width: 500px;
+	height: fit-content;
+}
+
+.sub-title {
+	display: flex;
+	border: 3px solid black;
+	justify-content: space-between;
+}
+
+.cross-icon {
+	width: 30px;
+	transform: rotate(0deg);
+	transition: 300ms;
+	transform: translateX(30px);
+	opacity: 0;
+}
+
+.img-flexbox {
+	/* background-color: blueviolet; */
+	display: flex;
+	justify-content: center;
+}
+
+.meme {
+	width: 400px;
+	height: 0px;
+	transition: 300ms;
+	object-fit: cover;
+}
+
+.accordion:hover .cross-icon {
+	display: inline-block;
+	transform: translateX(0px);
+	opacity: 100;
+}
+
+.accordion-section:hover {
+	cursor: pointer;
+}
+
+.accordion-section:hover .meme{
+	height: 400px;
+	width: 400px;
+}
+
+.accordion-section:hover .cross-icon{
+	transform:rotate(45deg);
+}
+
+input {
+	display: none;
+}
+
+input[type="radio"]:checked + label > div > .meme{
+	height: 400px;
+	width: 400px;
+}
+
+input[type="radio"]:checked + label > div > .cross-icon{
+	transform:rotate(45deg);
+}
+
+
