@@ -103,7 +103,7 @@ input {
 input[type="radio"]:checked + button > label > div > .meme {
   height: 25rem;
   width: auto;
-  margin: 1.875rem 0rem;
+  margin-bottom: 1.563rem;
 }
 
 input[type="radio"]:checked + button > label > div > .cross-icon {
