@@ -112,7 +112,22 @@ input[type="radio"]:checked + button {
   color: rgb(255, 138, 228);
 }
 
+@media (width <= 320px) {
+  .accordion {
+    color: rgb(255, 138, 228);
+  }
+  .cross-icon {
+    opacity: 100%;
+  }
+}
+
 @media (width > 320px) and (width < 820px) {
+  .accordion {
+    color: rgb(255, 138, 228);
+  }
+  .cross-icon {
+    opacity: 100%;
+  }
   .sub-title {
     font-size: 0.875rem;
   }
