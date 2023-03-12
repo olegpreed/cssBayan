@@ -73,7 +73,8 @@ h1 {
 
 .accordion-section:hover .meme{
 	height: 400px;
-	width: 400px;
+	width: auto;
+	margin: 30px 0px;
 }
 
 .accordion-section:hover .cross-icon{
@@ -94,7 +95,8 @@ input {
 
 input[type="radio"]:checked + button > label > div > .meme{
 	height: 400px;
-	width: 400px;
+	width: auto;
+	margin: 30px 0px;
 }
 
 input[type="radio"]:checked + button > label > div > .cross-icon{
