@@ -8,7 +8,7 @@ button {
 }
 
 html {
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(28, 27, 35);
 }
 
 body {
@@ -18,23 +18,23 @@ body {
 }
 
 .accordion {
-  border: 0.2rem solid #ea5a47;
   border-radius: 0.8rem;
-  padding: 1.4rem;
-  width: 500px;
+  margin: 0px 10px;
+  max-width: 500px;
+  min-width: 300px;
   height: fit-content;
-  color: cornflowerblue;
+  color: white;
 }
 
 h1 {
-  color: black;
+  color: rgb(255, 138, 228);
 }
 
 .sub-title {
   font-size: 10px;
   display: flex;
-  border: 3px solid black;
   justify-content: space-between;
+  border-top: 1px solid rgb(255, 138, 228);
 }
 
 .cross-icon {
@@ -46,7 +46,6 @@ h1 {
 }
 
 .img-flexbox {
-  /* background-color: blueviolet; */
   display: flex;
   justify-content: center;
 }
@@ -65,7 +64,7 @@ h1 {
 }
 
 .accordion:hover {
-  color: black;
+  color: rgb(255, 138, 228);
 }
 
 .accordion-section:hover {
@@ -75,7 +74,7 @@ h1 {
 .accordion-section:hover .meme {
   height: 400px;
   width: auto;
-  margin: 30px 0px;
+  margin-bottom: 20px;
 }
 
 .accordion-section:hover .cross-icon {
@@ -83,7 +82,7 @@ h1 {
 }
 
 button:active h2 {
-  color: cornflowerblue;
+  color: white;
 }
 
 button:active .cross-icon {
@@ -95,7 +94,7 @@ button:active .meme {
 }
 
 button:active .cross-icon {
-  filter: brightness(0%);
+  filter: brightness(200%);
 }
 
 input {
@@ -113,7 +112,7 @@ input[type="radio"]:checked + button > label > div > .cross-icon {
 }
 
 input[type="radio"]:checked + button {
-  color: black;
+  color: rgb(255, 138, 228);
 }
 
 @media (width > 320px) and (width < 820px) {
