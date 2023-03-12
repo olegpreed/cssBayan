@@ -1,0 +1,140 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  all: unset;
+  width: 100%;
+}
+
+html {
+  background-color: rgb(28, 27, 35);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  margin: 0rem 0.625rem;
+  max-width: 31.25rem;
+  min-width: 18.75rem;
+  height: fit-content;
+  color: white;
+}
+
+h1 {
+  color: rgb(255, 138, 228);
+}
+
+.sub-title {
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  border-top: 0.063rem solid rgb(255, 138, 228);
+}
+
+.cross-icon {
+  width: 1.875rem;
+  transform: rotate(0deg);
+  transition: 300ms;
+  opacity: 0;
+}
+
+.img-flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.meme {
+  width: 0rem;
+  height: 0rem;
+  transition: 300ms;
+  object-fit: cover;
+}
+
+.accordion:hover .cross-icon {
+  display: inline-block;
+  opacity: 100;
+}
+
+.accordion:hover {
+  color: rgb(255, 138, 228);
+}
+
+.accordion-section:hover {
+  cursor: pointer;
+}
+
+.accordion-section:hover .meme {
+  height: 25rem;
+  width: auto;
+  margin-bottom: 1.563rem;
+}
+
+.accordion-section:hover .cross-icon {
+  transform: rotate(45deg);
+}
+
+button:active h2 {
+  color: white;
+}
+
+button:active .cross-icon {
+  filter: brightness(0%);
+}
+
+button:active .meme {
+  filter: opacity(70%);
+}
+
+button:active .cross-icon {
+  filter: brightness(200%);
+}
+
+input {
+  display: none;
+}
+
+input[type="radio"]:checked + button > label > div > .meme {
+  height: 25rem;
+  width: auto;
+  margin-bottom: 1.563rem;
+}
+
+input[type="radio"]:checked + button > label > div > .cross-icon {
+  transform: rotate(45deg);
+}
+
+input[type="radio"]:checked + button {
+  color: rgb(255, 138, 228);
+}
+
+@media (width <= 320px) {
+  .accordion {
+    color: rgb(255, 138, 228);
+  }
+  .cross-icon {
+    opacity: 100%;
+  }
+}
+
+@media (width > 320px) and (width < 820px) {
+  .accordion {
+    color: rgb(255, 138, 228);
+  }
+  .cross-icon {
+    opacity: 100%;
+  }
+  .sub-title {
+    font-size: 0.875rem;
+  }
+}
+
+@media (width >= 820px) {
+  .sub-title {
+    font-size: 1rem;
+  }
+}
